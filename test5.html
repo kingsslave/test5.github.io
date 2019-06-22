@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p:first-child{
+                background-color:black;
+                color:white;
+            }
+            
+            div::first-letter{
+                font-size:250%;
+            }
+            
+            body > div{
+                background-color:yellow;
+            }
+            
+            div + p{
+                background-color:red;
+            }
+            div ~ .cool{
+                color:yellow;
+                background-color:green;
+            }
+            div ~ .cool:hover{
+                background-color:yellow;
+                color:green;
+            
+            }
+            div::after{
+                content:url(images/Cool_jump.gif) ;
+            }
+            
+            
+            p:first-child b{
+                color:black;
+                background-color:white;
+                
+            }
+        </style>
+
+    </head>
+    <body>
+        <p>looooooooo<b>oooooooo</b>ooooooooo<b>oo</b></p>
+        <p>loooooooo<b>oooooooooo</b>oooooooooo</p>
+        <div>
+        helloooooooooooooooooooooooooooo
+        </div>
+        <div>
+        helloooooooooooooooooooooooooooo
+        </div>
+        
+        <pre><div>helloooooooooooooooooooooooooooo</div></pre>
+        <div>
+        helloooooooooooooooooooooooooooo
+        </div>
+        <p>
+        loooooooooooooooooooooooooooo
+        </p>
+        <pre>
+            <pre class="cool">loooooooooooooooooooooooooooo</pre>
+            <div>loooooooooooooooooooooooooooo</div>
+            <pre class="cool">loooooooooooooooooooooooooooo</pre>   
+        </pre>
+    </body>
+
+
+
+
+</html>
